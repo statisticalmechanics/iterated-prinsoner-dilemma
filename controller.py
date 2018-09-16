@@ -53,7 +53,8 @@ def tour():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run()
     #app.run(host='216.174.124.203',debug=True)
 #import tkinter
 #import _tkinter
