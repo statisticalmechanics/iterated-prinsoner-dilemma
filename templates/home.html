@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Iterated Prisoner's Dilemma (IPD)</title>
+    </head>
+    <body>
+        <h1>Iterated Prisoner's Dilemma (IPD) </h1>
+        <h2><a href="http://127.0.0.1:5000/twoplayer">Two-player Game</a></h2>
+        <h2><a href="http://127.0.0.1:5000/tournament">Multiplayer Tournament</a></h2>
+    </body>
+
+ <table align="center" border="1|0"> <!style="width:100%">
+  <caption>Table 1 Payoff matrix (years of prison sentence)</caption>
+  <tr>
+    <th> </th>
+    <th> </th>
+    <th colspan="2"><font color="blue"> (Suspect B) </font></th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td align="center"><em>Silence</em></td>
+    <td align="center"><em>Confession</em></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><b><font color="red">(Suspect A)</font></b></td>
+    <td align="center"><em>Silence</em></td>
+    <td align="center"><font color="red">-1</font> , <font color="blue">-1</font></td>
+    <td align="center"><font color="red">-10</font> , <font color="blue">0</font></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Confession</em></td>
+    <td align="center"><font color="red">0</font> , <font color="blue">-10</font></td>
+    <td align="center"><font color="red">-7</font> , <font color="blue">-7</font></td>
+  </tr>
+</table> 
+
+<br> </br>
+
+ <table align="center" border="1"> <!style="width:100%">
+  <caption>Table 2 Payoff matrix (reward)</caption>
+  <tr>
+    <th> </th>
+    <th> </th>
+    <th colspan="2"><font color="blue"> (Player B) </font></th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td align="center"><em>Cooperate</em></td>
+    <td align="center"><em>Defect</em></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><b><font color="red">(Player A)</font></b></td>
+    <td align="center"><em>Cooperate</em></td>
+    <td align="center"><font color="red">R</font> , <font color="blue">R</font></td>
+    <td align="center"><font color="red">S</font> , <font color="blue">T</font></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Defect</em></td>
+    <td align="center"><font color="red">T</font> , <font color="blue">S</font></td>
+    <td align="center"><font color="red">P</font> , <font color="blue">P</font></td>
+  </tr>
+</table> 
+
+<p> R: reward for mutual cooperation</p>
+<p> T: temptation to defect</p>
+<p> S: sucker's payoff</p>
+<p> P: punishment for mutual defection</p>
+
+<br>
+<p>A game is a prisoner's dilemma, if T > R > P > S. It is also usually required that R>(T+P)/2 to guarantee that the payoff pure cooperation is higher than that of alternate cooperation and defection. A popular choice of (R, T, S, P) is (3, 5, 0, 1). </p>
+</br>
+
+<br>
+<p>If the game between two players is not just once, e.g. a player is playing the game for many or an unkown number of rounds in the population of multiplayers, we have an iterated prisoner's dilemma. The quesion is, which strategy (to play "C" or "D") allows the player to score most.  </p>
+</br>
+
+
+<hr />
+<h2>References </h2>
+<ol>
+<li> Robert Axelrod, Effective Choice in the Prisoner's Dilemma, J. Conflict Resolution 24, 3 (1980)</li>
+<li> Robert Axelrod, More Effective Choice in the Prisoner's Dilemma, J. Conflict Resolution 24, 379 (1980)</li>
+<li> Robert Axelrod and William D. Hamilton, The Evolution of Cooperation, Science 211, 1390 (1981)</li>
+<li> William H. Press and Freeman J. Dyson, Iterated Prisoner’s Dilemma contains strategies that dominate any evolutionary opponent, PNAS 109, 10409 (2012)</li>
+
+</ol>
+
+</html>

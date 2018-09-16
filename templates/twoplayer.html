@@ -1,0 +1,46 @@
+<html>
+
+<h1><a href="http://127.0.0.1:5000/">Iterated Prisoner's Dilemma (IPD)</a></h1>
+
+<body> 
+
+<br> 0: Always defect (ALLD)</br>
+<br> 1: Always cooperate (ALLC)</br>
+<br> 2: Tit for tat (TFT)</br>
+<br> 3: Random cooperation (RANC)</br>
+<br> 4: Memory-one (MEMONE)</br>
+<br> 5: zero determinant (ZD)</br>
+<br> n: user chosen</br>
+
+
+<br> </br>
+
+
+</body> 
+
+
+<form method=post action="">
+<table>
+  {% for field in form %}
+    <tr>
+    <td>{{ field.name }}</td><td>{{ field }}</td>
+    <td>{{ field.label }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+<p><input type=submit value=Simulate></form></p>
+
+<p>
+{% if score != None %}
+<br> final score is {{ score }} </br>
+{% endif %}
+</p>
+
+<p>
+{% if result != None %}
+<img src="{{ result }}" width="1000">
+{% endif %}
+</p>
+
+</html>
