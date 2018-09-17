@@ -9,6 +9,12 @@ verify_ssl = true
 gunicorn = "*"
 flask = "*"
 wtforms = "*"
+numpy = "*"
+matplotlib = "*"
+os = "*"
+glob = "*"
+time = "*"
+pandas = "*"
 
 
 [requires]
