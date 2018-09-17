@@ -11,9 +11,6 @@ flask = "*"
 wtforms = "*"
 numpy = "*"
 matplotlib = "*"
-os = "*"
-glob = "*"
-time = "*"
 pandas = "*"
 
 
