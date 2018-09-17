@@ -56,6 +56,7 @@ gmpy2==2.0.8
 graphviz==0.9
 greenlet==0.4.13
 grpcio==1.13.0
+gunicorn==19.9.0
 h5py==2.7.1
 heapdict==1.0.0
 html5lib==1.0.1
